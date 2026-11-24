@@ -1,0 +1,1 @@
+$o = new FuzzObj(7); $s = serialize($o); $u = unserialize($s); var_dump($u->getValue()); $o->setValue("12"); echo FuzzObj::CONSTY, FUZZ_CONST, $o->prop;

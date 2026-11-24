@@ -1,0 +1,9 @@
+project: savantenvs/PHP-CPP
+target: fuzz_api
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_api/testsuite
+cmds:
+  - cmd: /mayhem/build/mayhem/bin/fuzz_api
+    libfuzzer: true
+    timeout: 5

@@ -1,0 +1,10 @@
+project: savantenvs/PHP-CPP
+target: fuzz_script
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_script/testsuite
+cmds:
+  - cmd: /mayhem/build/mayhem/bin/fuzz_script
+    libfuzzer: true
+    timeout: 5
+    dictionary: /mayhem/mayhem/fuzz_script/fuzz_script.dict

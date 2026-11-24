@@ -1,0 +1,1 @@
+$p = new FuzzPlain(); var_dump($p == 5, 5 == $p, in_array(1, [$p, new FuzzObj(1)]), array_search(2, [new FuzzObj(2)])); foreach (new FuzzObj(1) as $k => $v) {}

@@ -1,0 +1,9 @@
+project: savantenvs/PHP-CPP
+target: fuzz_unserialize
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_unserialize/testsuite
+cmds:
+  - cmd: /mayhem/build/mayhem/bin/fuzz_unserialize
+    libfuzzer: true
+    timeout: 5

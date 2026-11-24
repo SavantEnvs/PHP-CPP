@@ -1,0 +1,1 @@
+ return strtoupper("abc") . FUZZ_CONST;

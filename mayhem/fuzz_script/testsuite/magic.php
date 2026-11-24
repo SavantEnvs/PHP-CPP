@@ -1,0 +1,1 @@
+$o = new FuzzObj(5); $o->a = 1; echo $o->a; isset($o->b); unset($o->a); echo $o->zz(1,2); echo FuzzObj::st(3); echo $o(1);

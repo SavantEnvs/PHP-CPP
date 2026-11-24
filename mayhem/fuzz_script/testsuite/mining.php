@@ -1,0 +1,1 @@
+fuzz_error_reporting(32767); error_reporting(E_ALL); var_dump(method_exists(new FuzzObj(1), "foo"), is_callable([new FuzzObj(1), "bar"]), fuzz_value_call(new FuzzObj(2), "getValue"), fuzz_compare_str(5, "5"), fuzz_compare_str([1], "a"), fuzz_concat(1, "a", 2.5));

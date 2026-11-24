@@ -1,0 +1,1 @@
+$o = new FuzzObj(3); $o["k"] = "v"; echo $o["k"]; var_dump(isset($o["x"]), count($o)); unset($o["k"]); $c = clone $o; var_dump($c == $o, $o < new FuzzObj(4), $o == 3, "3" == $o, (string)$o, (int)$o);
